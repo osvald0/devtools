@@ -1,16 +1,18 @@
 #!/usr/bin/env bash
 
+# ------------------------------------------------------------------------------
 #
 # A helper that digs into the files you added, modified or renamed in a given Git commit and either:
 # Search mode: Prints only the new lines that contain your search text, prefixing each with path/to/file:
 # Replace mode: Looks for the first occurrence of your search text in each changed file and swaps it out for your replacement, reporting where it happened.
 #
 # Usage:
-#   1) ./get-git-changes-with-text.sh <commit> <search text…>
-#   2) ./get-git-changes-with-text.sh <repo-path> <commit> <search text…>
-#   3) ./get-git-changes-with-text.sh <commit> <search text…> <replacement text…>
-#   4) ./get-git-changes-with-text.sh <repo-path> <commit> <search text…> <replacement text…>
+#   - ./get-git-changes-with-text.sh <commit> <search text…>
+#   - ./get-git-changes-with-text.sh <repo-path> <commit> <search text…>
+#   - ./get-git-changes-with-text.sh <commit> <search text…> <replacement text…>
+#   - ./get-git-changes-with-text.sh <repo-path> <commit> <search text…> <replacement text…>
 #
+# ------------------------------------------------------------------------------
 
 usage() {
   echo "Usage:"
